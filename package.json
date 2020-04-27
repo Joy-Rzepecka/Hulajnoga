@@ -1,7 +1,7 @@
 {
   "name": "hulajnoga",
   "version": "1.0.0",
-  "description": "Wszystkie zmienne są w folderze z SASSem, bo tak łatwiej mi obsługiwać preprocesowanie z gulpa",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
