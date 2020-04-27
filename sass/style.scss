@@ -1,2 +1,21 @@
+ //styles scss to uzupełnienie głównych styli strony o 
+// wykorzystanie zmiennych i innych
+//dodatkowych właściwości 
+// scss'a
+
+
+
 @import 'vars';
+@import 'grid';
+@import 'reset';
+@import 'navbar/navbar';
+
+/* ta klasa informuje, że element jest widoczny wyłącznie na ekranach o szerokości conajmniej 768px */
+.visible-md{
+    color: blue; //tymczasowo
+}
+
+body{
+    background: $background-dark;
+}
 
