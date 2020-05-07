@@ -20,3 +20,11 @@ body{
     
 }
 
+main > nav {
+    background-color: $nav-dark;
+}
+
+.welcome-text{
+    color: $light;
+    text-shadow: $text-outline;
+}

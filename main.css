@@ -1,10 +1,16 @@
 /* tu będą style pisnaie wyłacznie w css'ie */
-
+/* body{
+  czyszczenie marginesow w reset.scss
+background: 
+} */
 main{
     margin-bottom: 500px; /*tymczasowo */
     height: 100vh;
+    position: relative;
+    z-index: 90;
 }
 main > nav{
+    /* background: */
     display: flex;
     align-items: center;
     position: fixed;
@@ -12,6 +18,7 @@ main > nav{
     height: 5rem; 
     text-transform: uppercase;
     font-size: 24px;
+    z-index: 100;
     
 }
 main > nav > .brand-name{
@@ -44,4 +51,30 @@ margin: 0 .5rem;
 
 section{
     height: 100vh;
+}
+
+.welcome-text{
+    font-size: 3rem;
+    /* color
+    tetx-shadow */
+    margin-left: 12.5rem;
+    position: absolute;
+    top: 144px; /*64 px od dolnej krawedzi navbaru */
+    z-index: 97;
+}
+
+.main-image{
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    z-index: 95;
+    transform: translateX(-50%);
+}
+
+section img {
+    min-height: 720px;
+    min-width: 540px;
+    height: 720px;
+    width: 540px;
 }

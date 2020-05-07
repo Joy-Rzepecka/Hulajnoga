@@ -271,3 +271,10 @@ main > nav {
 
 body {
   background: #3F3F3F; }
+
+main > nav {
+  background-color: #4F4F4F; }
+
+.welcome-text {
+  color: #DDD;
+  text-shadow: 1px 0 0 #000, -1px 0 0 #000, 0 1px 0 #000, 0 -1px 0 #000; }
