@@ -4,23 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="css/style.css"> <!--styles to plik, który jest pisany w scssie-->
     <link rel="stylesheet" href="main.css"> <!-- Main to plik ze stylami napisanymi w cssie-->
+    <link rel="stylesheet" href="css-components/scrroll-arrow.css">
     <title>Serwis hulajnóg elektrycznych</title>
 </head>
 <body>
     <main>
         <nav>
-            <div class="brand-name">Piotr Rzepecki</div>
+            <a href="#" class="brand-name-wrapper"><div class="brand-name">Piotr Rzepecki</div></a>
             <ul class="nav-tabs">
-                <li class="nav-tab-item">o mnie</li>
-                <li class="nav-tab-item">oferta</li>
-                <li class="nav-tab-item">kontakt</li>
+                <a href="#" ><li class="nav-tab-item">o mnie</li></a>
+                <a href="#" ><li class="nav-tab-item">oferta</li></a>
+                <a href="#" ><li class="nav-tab-item">kontakt</li></a>
             </ul>
         </nav>
-        <img src="img/tlo.png" alt="" class="main-image"> <!-- obecnie wykorzystywane zdjecie jest zdecydowanie nieidealne-->
+        <!-- obecnie wykorzystywane zdjecie jest zdecydowanie nieidealne -->
+        <img src="img/tlo.png" alt="" class="main-image"> 
         <h1 class="welcome-text">Serwis i naprawa <br> hulajnóg elekrycznych</h1>
-        <!-- Czy element strzałki wskazujący na przewijanie strony powinien być elementem html czy wystarczy zrobić go jako ::beffore -->
+        <!-- strazałka jako link w srodku element pozycjonujący z ::beforem tworzacym strzlke -->
+            <a href="#"><i class="scroll-arrow"></i></a>
     </main>
     <section id="about-me">
         <div class="container">
@@ -63,7 +67,7 @@
     </section>
     <section id="contact">
         <div class="col-xs-12 col-md-6">
-            <h2>kontakt</h2>
+            <h2>Kontakt</h2>
             <p class="contact-info">Przekonałem Cię? Zadzwoń, napisz maila 
                 <span class="visible-md">lub wyślij formularz</span>
                   , a ja zajmę się resztą.</p>

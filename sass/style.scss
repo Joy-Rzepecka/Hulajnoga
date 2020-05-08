@@ -10,19 +10,22 @@
 @import 'reset';
 @import 'navbar/navbar';
 
+
 /* ta klasa informuje, że element jest widoczny wyłącznie na ekranach o szerokości conajmniej 768px */
 .visible-md{
     color: blue; //tymczasowo
 }
 
-body{
-    background: $background-dark;
-    
+h2{
+    text-shadow: $text-outline;
 }
 
-main > nav {
-    background-color: $nav-dark;
+body{
+    background: $background-dark;
+    color: $light;
 }
+
+
 
 .welcome-text{
     color: $light;

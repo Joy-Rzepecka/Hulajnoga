@@ -262,18 +262,23 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-main > nav {
+main nav {
+  color: #DDD;
+  background-color: #4F4F4F; }
+
+.nav-tab-item {
   color: #DDD; }
 
 /* ta klasa informuje, że element jest widoczny wyłącznie na ekranach o szerokości conajmniej 768px */
 .visible-md {
   color: blue; }
 
-body {
-  background: #3F3F3F; }
+h2 {
+  text-shadow: 1px 0 0 #000, -1px 0 0 #000, 0 1px 0 #000, 0 -1px 0 #000; }
 
-main > nav {
-  background-color: #4F4F4F; }
+body {
+  background: #3F3F3F;
+  color: #DDD; }
 
 .welcome-text {
   color: #DDD;

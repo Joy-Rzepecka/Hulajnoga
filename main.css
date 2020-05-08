@@ -1,15 +1,36 @@
 /* tu będą style pisnaie wyłacznie w css'ie */
-/* body{
-  czyszczenie marginesow w reset.scss
-background: 
-} */
+body{
+    /*
+ czyszczenie marginesow w reset.scss
+background: w style.css */
+font-family: 'Jost', sans-serif;
+} 
+/*Najpierw opisuje powtarzające się wielokrotnie elementy na stronie, które mają wspólne style */
+section{
+    height: 100vh;
+}
+
+
+section img {
+    min-height: 720px;
+    min-width: 540px;
+    height: 720px;
+    width: 540px;
+}
+
+h2{
+    height: 120px;
+    line-height: 120px;
+    font-size: 64px;
+}
+/*W tym miejscu zaczynają się style dla pojedynczych elementów i sekcji na stronie */
 main{
     margin-bottom: 500px; /*tymczasowo */
     height: 100vh;
     position: relative;
     z-index: 90;
 }
-main > nav{
+main  nav{
     /* background: */
     display: flex;
     align-items: center;
@@ -21,7 +42,10 @@ main > nav{
     z-index: 100;
     
 }
-main > nav > .brand-name{
+main nav .brand-name-wrapper{
+    height: 100%;
+}
+main  nav  .brand-name{
     /* text-shadow:  */
     display: flex;
     align-items: center;
@@ -37,7 +61,7 @@ main > nav > .brand-name{
     color: white;
 }
 
-main > nav .nav-tabs{
+main  nav .nav-tabs{
    
     display: flex;
     flex-direction: row;
@@ -45,22 +69,22 @@ main > nav .nav-tabs{
     padding: 0;
 }
 
-main > nav .nav-tabs .nav-tab-item{
-margin: 0 .5rem;
+main  nav .nav-tabs .nav-tab-item{
+    margin: 0 .5rem;
 }
 
-section{
-    height: 100vh;
-}
 
 .welcome-text{
-    font-size: 3rem;
+   
     /* color
     tetx-shadow */
     margin-left: 12.5rem;
     position: absolute;
     top: 144px; /*64 px od dolnej krawedzi navbaru */
-    z-index: 97;
+    z-index: 99;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 3rem;
 }
 
 .main-image{
@@ -70,11 +94,4 @@ section{
     left: 50%;
     z-index: 95;
     transform: translateX(-50%);
-}
-
-section img {
-    min-height: 720px;
-    min-width: 540px;
-    height: 720px;
-    width: 540px;
 }
