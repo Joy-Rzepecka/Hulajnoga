@@ -8,12 +8,13 @@
   width: 100%; }
 
 .container {
-  max-width: 75rem; }
+  max-width: 90rem; }
 
 .row {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  justify-content: space-between; }
 
 [class*="col-"] {
   box-sizing: border-box;

@@ -9,6 +9,8 @@ background: w style.css */
 /*Najpierw opisuje powtarzające się wielokrotnie elementy na stronie, które mają wspólne style */
 section {
     height: 100vh;
+    display: flex;
+    align-items: center;
 }
 
 h2 {
