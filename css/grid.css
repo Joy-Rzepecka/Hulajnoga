@@ -4,8 +4,6 @@
   flex-direction: column;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 1rem;
-  padding-right: 1rem;
   width: 100%; }
 
 .container {
@@ -14,14 +12,10 @@
 .row {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  margin-left: -1rem;
-  margin-right: -1rem; }
+  flex-wrap: wrap; }
 
 [class*="col-"] {
   box-sizing: border-box;
-  padding-left: 1rem;
-  padding-right: 1rem;
   position: relative; }
 
 .col-1 {

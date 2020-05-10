@@ -9,6 +9,7 @@
 @import 'grid';
 @import 'reset';
 @import 'navbar/navbar';
+@import 'components/image';
 
 
 /* ta klasa informuje, że element jest widoczny wyłącznie na ekranach o szerokości conajmniej 768px */
@@ -31,3 +32,5 @@ body{
     color: $light;
     text-shadow: $text-outline;
 }
+
+

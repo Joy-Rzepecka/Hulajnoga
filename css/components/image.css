@@ -1,0 +1,24 @@
+.image-wrapper {
+  height: 720px;
+  width: auto; }
+
+.image-wrapper::after {
+  content: '';
+  background-image: url("../../img/steel.jpg");
+  background-repeat: no-repeat;
+  height: 720px;
+  width: 540px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  transform: translate(54px, 54px); }
+
+.image-wrapper img, .image-wrapper::after {
+  transition: transform .5s; }
+
+.image-wrapper:hover.image-wrapper img {
+  transform: translate(27px, 27px); }
+
+.image-wrapper:hover.image-wrapper::after {
+  transform: translate(-27px, -27px); }

@@ -1,0 +1,73 @@
+// Te zmienne sa uzywane tylko w tym pliku:
+$image-height: 720px;
+$image-width: 540px;
+//połowa przesunięcia tła względem zdjęcia
+$image-translation: 27px;
+
+
+.image-wrapper img,
+.image-wrapper::after,
+.image-wrapper {
+    height: $image-height;
+    transition: transform $transition-duration;
+    width: $image-width;
+}
+
+.image-wrapper {
+    height: $image-height;
+
+}
+
+.image-wrapper img {
+    min-height: 720px;
+    min-width: 540px;
+    z-index: 80;
+    position: relative;
+}
+
+.image-wrapper::after {
+    content: '';
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+}
+
+.image-background--steel {
+
+    &::after {
+        background-image: url('../../img/steel.jpg');
+        transform: translate(2 * $image-translation, 2 * $image-translation);
+    }
+
+    &:hover {
+
+        &.image-wrapper img {
+            transform: translate($image-translation, $image-translation);
+        }
+
+        &.image-wrapper::after {
+            transform: translate(-1 * $image-translation, -1 * $image-translation);
+        }
+    }
+}
+
+.image-background--copper {
+    &::after {
+        background-image: url('../../img/copper.jpg');
+        transform: translate(-2 * $image-translation, -2 * $image-translation);
+    }
+
+    &:hover {
+
+        &.image-wrapper img {
+            transform: translate(-1 * $image-translation, -1 * $image-translation);
+        }
+
+        &.image-wrapper::after {
+            transform: translate($image-translation, $image-translation);
+        }
+    }
+}

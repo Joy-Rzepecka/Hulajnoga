@@ -5,8 +5,6 @@
   flex-direction: column;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 1rem;
-  padding-right: 1rem;
   width: 100%; }
 
 .container {
@@ -15,14 +13,10 @@
 .row {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  margin-left: -1rem;
-  margin-right: -1rem; }
+  flex-wrap: wrap; }
 
 [class*="col-"] {
   box-sizing: border-box;
-  padding-left: 1rem;
-  padding-right: 1rem;
   position: relative; }
 
 .col-1 {
@@ -268,6 +262,51 @@ main nav {
 
 .nav-tab-item {
   color: #DDD; }
+
+.image-wrapper img,
+.image-wrapper::after,
+.image-wrapper {
+  height: 720px;
+  transition: transform 0.5s;
+  width: 540px; }
+
+.image-wrapper {
+  height: 720px; }
+
+.image-wrapper img {
+  min-height: 720px;
+  min-width: 540px;
+  z-index: 80;
+  position: relative; }
+
+.image-wrapper::after {
+  content: '';
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block; }
+
+.image-background--steel::after {
+  background-image: url("../../img/steel.jpg");
+  transform: translate(54px, 54px); }
+
+.image-background--steel:hover.image-wrapper img {
+  transform: translate(27px, 27px); }
+
+.image-background--steel:hover.image-wrapper::after {
+  transform: translate(-27px, -27px); }
+
+.image-background--copper::after {
+  background-image: url("../../img/copper.jpg");
+  transform: translate(-54px, -54px); }
+
+.image-background--copper:hover.image-wrapper img {
+  transform: translate(-27px, -27px); }
+
+.image-background--copper:hover.image-wrapper::after {
+  transform: translate(27px, 27px); }
 
 /* ta klasa informuje, że element jest widoczny wyłącznie na ekranach o szerokości conajmniej 768px */
 .visible-md {
