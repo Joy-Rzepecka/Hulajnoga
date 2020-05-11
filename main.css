@@ -18,6 +18,22 @@ h2 {
     height: 120px;
     line-height: 120px;
     font-size: 64px;
+    position: relative;
+    z-index: 80;
+}
+
+.headline-background--copper::before{
+    content: '';
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('img/copper.jpg');
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    height: 120px;
+    width: 200px;
+    z-index: -1;
 }
 
 p{
