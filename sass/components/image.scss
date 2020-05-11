@@ -49,7 +49,7 @@ $image-translation: 27px;
         }
 
         &.image-wrapper::after {
-            transform: translate(-1 * $image-translation, -1 * $image-translation);
+            transform: translate(-0.5 * $image-translation, -0.5 * $image-translation);
         }
     }
 }
@@ -67,7 +67,7 @@ $image-translation: 27px;
         }
 
         &.image-wrapper::after {
-            transform: translate($image-translation, $image-translation);
+            transform: translate(0.5 * $image-translation, 0.5 * $image-translation);
         }
     }
 }

@@ -1,30 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet"> 
-    <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="css/style.css"> <!--styles to plik, który jest pisany w scssie-->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <!--styles to plik, który jest pisany w scssie-->
     <link rel="stylesheet" href="main.css"> <!-- Main to plik ze stylami napisanymi w cssie-->
     <link rel="stylesheet" href="css-components/scroll-arrow.css">
     <title>Serwis hulajnóg elektrycznych</title>
 </head>
+
 <body>
     <main>
         <nav>
-            <a href="#" class="brand-name-wrapper"><div class="brand-name">Piotr Rzepecki</div></a>
+            <a href="#" class="brand-name-wrapper">
+                <div class="brand-name">Piotr Rzepecki</div>
+            </a>
             <ul class="nav-tabs">
-                <a href="#" ><li class="nav-tab-item">o mnie</li></a>
-                <a href="#" ><li class="nav-tab-item">oferta</li></a>
-                <a href="#" ><li class="nav-tab-item">kontakt</li></a>
+                <a href="#">
+                    <li class="nav-tab-item">o mnie</li>
+                </a>
+                <a href="#">
+                    <li class="nav-tab-item">oferta</li>
+                </a>
+                <a href="#">
+                    <li class="nav-tab-item">kontakt</li>
+                </a>
             </ul>
         </nav>
         <!-- obecnie wykorzystywane zdjecie jest zdecydowanie nieidealne -->
-        <img src="img/tlo.png" alt="" class="main-image"> 
+        <img src="img/tlo.png" alt="" class="main-image">
         <h1 class="welcome-text">Serwis i naprawa <br> hulajnóg elekrycznych</h1>
         <!-- strazałka jako link w srodku element pozycjonujący z ::beforem tworzacym strzlke -->
-            <a href="#"><i class="scroll-arrow"></i></a>
+        <a href="#"><i class="scroll-arrow"></i></a>
     </main>
     <section id="about-me">
         <div class="container">
@@ -32,8 +43,12 @@
                 <div class="col-xs-12 col-md-6">
                     <h2>Kim jestem?</h2>
                     <p>
-                        Nazywam się Piotr i sprzedaję szczęście na kółkach. Przez 20 lat pracowłem jako mechanik samochodowy, a dziś zdobytą wiedzę wykorzystuję w naprawach i sprzedaży hulajnóg elektrycznych. Szybko stało się to moją pasją, a teraz zarażam nią innych. Moim zadaniem jest dać Tobie pełną satysfakcję z jazdy. 
-                        <span class="visible-md">Dlatego obok mnie znajduje się mój zespół do spraw zapewniania dobrej zabawy.</span> 
+                        Nazywam się Piotr i sprzedaję szczęście na kółkach. Przez 20 lat pracowłem jako mechanik
+                        samochodowy, a dziś zdobytą wiedzę wykorzystuję w naprawach i sprzedaży hulajnóg elektrycznych.
+                        Szybko stało się to moją pasją, a teraz zarażam nią innych. Moim zadaniem jest dać Tobie pełną
+                        satysfakcję z jazdy.
+                        <span class="visible-md">Dlatego obok mnie znajduje się mój zespół do spraw zapewniania dobrej
+                            zabawy.</span>
                     </p>
                 </div>
                 <div class="col-sm-12 col-md-6 image-wrapper image-background--steel visible-md">
@@ -48,39 +63,46 @@
                 <div class="col-sm-12 col-md-6 image-wrapper image-background--copper">
                     <img src="img/service-image.jpg" alt="" class="visible-md">
                 </div>
-                <div class="col-sm-12 col-md-6">
+                <!-- Tymczasowo stwierdzam, ze ta czesc lepiej wygląda gdy jest col-md-5  -->
+                <div class="col-sm-12 col-md-5">
                     <h2>Serwis</h2>
                     <p>
-                        Oferuję naprawę hulajnóg elektrycznych. Jeżeli z Twoją hulajnogą dzieje się jedna z poniższych rzeczy to od razu przejdź do sekcji kontkatku. </p>
-                        <ul>
-                            <li>Nie działają hamulce, klocki hamulcowe piszczą lub nie działa “manetka” hamulcowa;</li>
-                            <li>Hulajnoga jest nowa, ale nie chce odpalić;</li>
-                            <li>Kierownica nie skręca;</li>
-                            <li>Podświetlenie nie działa, lampa przednia nie działa;</li>
-                            <li>Manetka gazu nie działa;</li>
-                            <li>Potrzebujesz dołączyć dodatkową baterię, zwiększyć zasięg lub żywotność baterii;</li>
-                            <li>Cokolwiek niepokojąco świszczy lub piszczy. </li>
-                        </ul>
+                        Oferuję naprawę hulajnóg elektrycznych. Jeżeli z Twoją hulajnogą dzieje się jedna z poniższych
+                        rzeczy to od razu przejdź do sekcji kontkatku. </p>
+                    <ol>
+                        <li>Nie działają hamulce, klocki hamulcowe piszczą lub nie działa “manetka” hamulcowa;</li>
+                        <li>Hulajnoga jest nowa, ale nie chce odpalić;</li>
+                        <li>Kierownica nie skręca;</li>
+                        <li>Podświetlenie nie działa, lampa przednia nie działa;</li>
+                        <li>Manetka gazu nie działa;</li>
+                        <li>Potrzebujesz dołączyć dodatkową baterię, zwiększyć zasięg lub żywotność baterii;</li>
+                        <li>Cokolwiek niepokojąco świszczy lub piszczy. </li>
+                    </ol>
                 </div>
             </div>
         </div>
     </section>
     <section id="contact">
-        <div class="col-xs-12 col-md-6">
-            <h2>Kontakt</h2>
-            <p class="contact-info">Przekonałem Cię? Zadzwoń, napisz maila 
-                <span class="visible-md">lub wyślij formularz</span>
-                  , a ja zajmę się resztą.</p>
-            <address>
-                <p class="contact-phone-number">tel. 123 456 789</p>
-                <p class="contact-email">email: lorem@ipsum.pl</p>
-            </address>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-md-6">
+                    <h2>Kontakt</h2>
+                    <p class="contact-info">Przekonałem Cię? Zadzwoń, napisz maila
+                        <span class="visible-md">lub wyślij formularz</span>
+                        , a ja zajmę się resztą.</p>
+                    <address>
+                        <p class="contact-phone-number">tel. 123 456 789</p>
+                        <p class="contact-email">email: lorem@ipsum.pl</p>
+                    </address>
+                </div>
+                <div class="col-xs-12 col-md-6 visible-md"></div>
+            </div>
         </div>
-        <div class="col-xs-12 col-md-6 visible-md"></div>
-        <footer>
+        <footer class="col-12">
             <p>&copy; 2020 Piotr Rzepecki. All rights reserved</p>
             <p class="contact-made-by">Made by <a href="">EduYourself</a></p>
         </footer>
     </section>
 </body>
+
 </html>

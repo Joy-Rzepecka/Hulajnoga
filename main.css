@@ -11,6 +11,7 @@ section {
     height: 100vh;
     display: flex;
     align-items: center;
+    position: relative;
 }
 
 h2 {
@@ -18,6 +19,13 @@ h2 {
     line-height: 120px;
     font-size: 64px;
 }
+
+p{
+    font-size: 24px;
+    width: 465px; /* jak to wymierzyłem, nie wiem */
+}
+
+
 
 /*W tym miejscu zaczynają się style dla pojedynczych elementów i sekcji na stronie */
 main {
@@ -95,4 +103,19 @@ main nav .nav-tabs .nav-tab-item {
     left: 50%;
     z-index: 95;
     transform: translateX(-50%);
+}
+#service ol {
+    list-style: decimal;
+    width: 465px;
+}
+
+
+#contact{
+    flex-direction: column;
+    align-items: unset;
+}
+
+#contact footer{
+    position: absolute;
+    bottom: 0;
 }
