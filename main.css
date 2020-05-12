@@ -34,7 +34,11 @@ h2 {
     height: 120px;
     width: 200px;
     z-index: -1;
+    transition: 1s cubic-bezier(.39,.06,.14,.96);
 }
+
+h2:hover::before {
+    transform: translateX(100%); }
 
 p{
     font-size: 24px;
