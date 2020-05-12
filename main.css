@@ -22,11 +22,10 @@ h2 {
     z-index: 80;
 }
 
-.headline-background--copper::before{
+h2::before {
     content: '';
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url('img/copper.jpg');
     position: absolute;
     top: 0;
     left: 0;
@@ -34,15 +33,27 @@ h2 {
     height: 120px;
     width: 200px;
     z-index: -1;
-    transition: 1s cubic-bezier(.39,.06,.14,.96);
+    transition: 1s cubic-bezier(.39, .06, .14, .96);
+}
+
+.headline-background--copper::before {
+
+    background-image: url('img/copper.jpg');
+}
+
+.headline-background--steel::before {
+    background-image: url('img/steel.jpg');
 }
 
 h2:hover::before {
-    transform: translateX(100%); }
+    transform: translateX(100%);
 
-p{
+}
+
+p {
     font-size: 24px;
-    width: 465px; /* jak to wymierzyłem, nie wiem */
+    width: 465px;
+    /* jak to wymierzyłem, nie wiem */
 }
 
 
@@ -124,18 +135,20 @@ main nav .nav-tabs .nav-tab-item {
     z-index: 95;
     transform: translateX(-50%);
 }
+
 #service ol {
     list-style: decimal;
     width: 465px;
+    font-size: 24px;
 }
 
 
-#contact{
+#contact {
     flex-direction: column;
     align-items: unset;
 }
 
-#contact footer{
+#contact footer {
     position: absolute;
     bottom: 0;
 }
