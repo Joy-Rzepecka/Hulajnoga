@@ -1,13 +1,13 @@
 // Te zmienne sa uzywane tylko w tym pliku:
-$image-height: 720px;
-$image-width: 540px;
+$image-width: 30vw;
+$image-height: $image-width * 4 /3;
+
 //połowa przesunięcia tła względem zdjęcia
-$image-translation: 27px;
+$image-translation: 24px;
 
 
 .image-wrapper img,
-.image-wrapper::after,
-.image-wrapper {
+.image-wrapper::after{
     height: $image-height;
     transition: transform $transition-duration;
     width: $image-width;
@@ -19,8 +19,8 @@ $image-translation: 27px;
 }
 
 .image-wrapper img {
-    min-height: 720px;
-    min-width: 540px;
+    // min-height: 720px;
+    // min-width: 480px;
     z-index: 80;
     position: relative;
 }
@@ -55,7 +55,13 @@ $image-translation: 27px;
 }
 
 .image-background--copper {
+    // przesunięcie zdjecia na lewą stronę od diva 
+    display: flex;
+    justify-content: end;
     &::after {
+        //trzeba zamienić left na right
+        left: unset;
+        right: 0;
         background-image: url('../../img/copper.jpg');
         transform: translate(-2 * $image-translation, -2 * $image-translation);
     }

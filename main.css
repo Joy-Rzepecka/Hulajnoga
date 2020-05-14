@@ -8,7 +8,6 @@ background: w style.css */
 
 /*Najpierw opisuje powtarzające się wielokrotnie elementy na stronie, które mają wspólne style */
 section {
-    height: 100vh;
     display: flex;
     align-items: center;
     position: relative;
@@ -145,7 +144,10 @@ main nav .nav-tabs .nav-tab-item {
 
 #contact {
     flex-direction: column;
-    align-items: unset;
+    /*justify content jako główna oś wyznaczona przez flex-direction: column; 
+    space around odsuwa stopkę na sam dół a kontakt niżej niż górna część sekcji 
+    */
+    justify-content: space-around; 
 }
 
 #contact footer {

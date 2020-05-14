@@ -25,7 +25,10 @@ body{
     background: $background-dark;
     color: $light;
 }
-
+//dodaje wysokosc do sekcji w zaleznosci od nav-height
+section{
+    height: calc(100vh + #{$nav-height});
+}
 
 
 .welcome-text{

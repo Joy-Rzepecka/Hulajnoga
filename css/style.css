@@ -5,7 +5,7 @@
   flex-direction: column;
   margin-left: auto;
   margin-right: auto;
-  padding: 0 10%;
+  padding: 0 5vw;
   width: 100%; }
 
 .container {
@@ -266,18 +266,15 @@ main nav {
   color: #DDD; }
 
 .image-wrapper img,
-.image-wrapper::after,
-.image-wrapper {
-  height: 720px;
+.image-wrapper::after {
+  height: 40vw;
   transition: transform 0.5s;
-  width: 540px; }
+  width: 30vw; }
 
 .image-wrapper {
-  height: 720px; }
+  height: 40vw; }
 
 .image-wrapper img {
-  min-height: 720px;
-  min-width: 540px;
   z-index: 80;
   position: relative; }
 
@@ -292,23 +289,26 @@ main nav {
 
 .image-background--steel::after {
   background-image: url("../../img/steel.jpg");
-  transform: translate(54px, 54px); }
+  transform: translate(48px, 48px); }
 
 .image-background--steel:hover.image-wrapper img {
-  transform: translate(27px, 27px); }
+  transform: translate(24px, 24px); }
 
 .image-background--steel:hover.image-wrapper::after {
-  transform: translate(-13.5px, -13.5px); }
+  transform: translate(-12px, -12px); }
 
-.image-background--copper::after {
-  background-image: url("../../img/copper.jpg");
-  transform: translate(-54px, -54px); }
-
-.image-background--copper:hover.image-wrapper img {
-  transform: translate(-27px, -27px); }
-
-.image-background--copper:hover.image-wrapper::after {
-  transform: translate(13.5px, 13.5px); }
+.image-background--copper {
+  display: flex;
+  justify-content: end; }
+  .image-background--copper::after {
+    left: unset;
+    right: 0;
+    background-image: url("../../img/copper.jpg");
+    transform: translate(-48px, -48px); }
+  .image-background--copper:hover.image-wrapper img {
+    transform: translate(-24px, -24px); }
+  .image-background--copper:hover.image-wrapper::after {
+    transform: translate(12px, 12px); }
 
 /* ta klasa informuje, że element jest widoczny wyłącznie na ekranach o szerokości conajmniej 768px */
 .visible-md {
@@ -320,6 +320,9 @@ h2 {
 body {
   background: #3F3F3F;
   color: #DDD; }
+
+section {
+  height: calc(100vh + 80px); }
 
 .welcome-text {
   color: #DDD;
