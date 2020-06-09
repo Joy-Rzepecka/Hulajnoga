@@ -38,7 +38,7 @@ $image-translation: 24px;
 .image-background--steel {
 
     &::after {
-        background-image: url('../../img/steel.jpg');
+        background-image: url('../img/steel.jpg');
         transform: translate(2 * $image-translation, 2 * $image-translation);
     }
 
@@ -62,7 +62,7 @@ $image-translation: 24px;
         //trzeba zamienić left na right
         left: unset;
         right: 0;
-        background-image: url('../../img/copper.jpg');
+        background-image: url('../img/copper.jpg');
         transform: translate(-2 * $image-translation, -2 * $image-translation);
     }
 

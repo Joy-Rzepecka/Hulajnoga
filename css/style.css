@@ -288,7 +288,7 @@ main nav {
   display: block; }
 
 .image-background--steel::after {
-  background-image: url("../../img/steel.jpg");
+  background-image: url("../img/steel.jpg");
   transform: translate(48px, 48px); }
 
 .image-background--steel:hover.image-wrapper img {
@@ -303,7 +303,7 @@ main nav {
   .image-background--copper::after {
     left: unset;
     right: 0;
-    background-image: url("../../img/copper.jpg");
+    background-image: url("../img/copper.jpg");
     transform: translate(-48px, -48px); }
   .image-background--copper:hover.image-wrapper img {
     transform: translate(-24px, -24px); }
