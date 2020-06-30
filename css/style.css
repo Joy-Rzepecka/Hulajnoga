@@ -1,12 +1,14 @@
-@charset "UTF-8";
 .container-fluid,
 .container {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  box-sizing: content-box;
   margin-left: auto;
   margin-right: auto;
-  padding: 0 5vw;
-  width: 100%; }
+  padding: 0 10vw;
+  width: 100%;
+  height: 100%; }
 
 .container {
   max-width: 90rem; }
@@ -15,7 +17,8 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between; }
+  justify-content: space-between;
+  align-items: center; }
 
 [class*="col-"] {
   box-sizing: border-box;
@@ -181,7 +184,9 @@
     max-width: 91.66667%; }
   .col-lg-12 {
     width: 100%;
-    max-width: 100%; } }
+    max-width: 100%; }
+  .row {
+    align-items: unset; } }
 
 @media (min-width: 75rem) {
   .col-xl-1 {
@@ -268,11 +273,15 @@ main nav {
 .image-wrapper img,
 .image-wrapper::after {
   height: 40vw;
-  transition: transform 0.5s;
-  width: 30vw; }
+  max-height: 768px;
+  width: 30vw;
+  max-width: 576px;
+  transition: transform 0.5s; }
 
 .image-wrapper {
-  height: 40vw; }
+  height: 40vw;
+  display: flex;
+  justify-content: end; }
 
 .image-wrapper img {
   z-index: 80;
@@ -284,7 +293,6 @@ main nav {
   background-size: cover;
   position: absolute;
   top: 0;
-  left: 0;
   display: block; }
 
 .image-background--steel::after {
@@ -299,10 +307,8 @@ main nav {
 
 .image-background--copper {
   display: flex;
-  justify-content: end; }
+  justify-content: start; }
   .image-background--copper::after {
-    left: unset;
-    right: 0;
     background-image: url("../img/copper.jpg");
     transform: translate(-48px, -48px); }
   .image-background--copper:hover.image-wrapper img {
@@ -310,9 +316,28 @@ main nav {
   .image-background--copper:hover.image-wrapper::after {
     transform: translate(12px, 12px); }
 
-/* ta klasa informuje, że element jest widoczny wyłącznie na ekranach o szerokości conajmniej 768px */
-.visible-md {
-  color: blue; }
+.form-modal-button {
+  border: 1px solid yellow;
+  border-radius: 4px;
+  padding: .5rem;
+  opacity: 1;
+  background-color: #4F4F4F; }
+
+.form-wrapper {
+  transform: translate(-50%, -50%) scale(0);
+  display: inline-block;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 110;
+  background-color: #4F4F4F;
+  padding: 32px; }
+
+#form-modal:checked ~ .form-wrapper {
+  transform: translate(-50%, -50%) scale(1); }
+
+#form-modal:checked ~ label .form-modal-button {
+  opacity: 0.5; }
 
 h2 {
   text-shadow: 1px 0 0 #000, -1px 0 0 #000, 0 1px 0 #000, 0 -1px 0 #000; }
@@ -321,7 +346,7 @@ body {
   background: #3F3F3F;
   color: #DDD; }
 
-section {
+section, main {
   height: calc(100vh + 80px); }
 
 .welcome-text {

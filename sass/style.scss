@@ -10,12 +10,8 @@
 @import 'reset';
 @import 'navbar/navbar';
 @import 'components/image';
+@import 'components/modal';
 
-
-/* ta klasa informuje, że element jest widoczny wyłącznie na ekranach o szerokości conajmniej 768px */
-.visible-md{
-    color: blue; //tymczasowo
-}
 
 h2{
     text-shadow: $text-outline;
@@ -26,7 +22,7 @@ body{
     color: $light;
 }
 //dodaje wysokosc do sekcji w zaleznosci od nav-height
-section{
+section, main{
     height: calc(100vh + #{$nav-height});
 }
 
@@ -35,5 +31,7 @@ section{
     color: $light;
     text-shadow: $text-outline;
 }
+
+
 
 

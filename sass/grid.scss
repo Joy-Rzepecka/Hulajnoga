@@ -2,10 +2,14 @@
 .container{
     display: flex;
     flex-direction: column;
+    //wyśrodkowanie pionowe rzędu w każdym kontenerze
+    justify-content: center;
+    box-sizing: content-box;
     margin-left: auto;
     margin-right: auto;
-    padding: 0 5vw;
+    padding: 0 10vw;
     width: 100%;
+    height: 100%;
 }
 
 .container{ max-width: 90rem;} //1440px
@@ -15,6 +19,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center; //nadpisane od 992px
 
 }
 
@@ -25,13 +30,16 @@
 }
 
 
+
+
+
 @for $i from 1 to 13 {
 
     .col-#{$i} {
         width: $i / 12 * 100%;
         max-width: $i / 12 * 100%;
     }
-
+    
 
 }
 
@@ -61,6 +69,7 @@
 
 
     }
+
 }
 
 @media (min-width: 62rem) { //992px
@@ -72,8 +81,9 @@
             max-width: $i / 12 * 100%;
             
         }
-
-
+    }
+    .row{
+        align-items: unset;
     }
 }
 

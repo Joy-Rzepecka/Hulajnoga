@@ -1,0 +1,45 @@
+.image-wrapper img,
+.image-wrapper::after {
+  height: 40vw;
+  max-height: 768px;
+  width: 30vw;
+  max-width: 576px;
+  transition: transform 0.5s; }
+
+.image-wrapper {
+  height: 40vw;
+  display: flex;
+  justify-content: end; }
+
+.image-wrapper img {
+  z-index: 80;
+  position: relative; }
+
+.image-wrapper::after {
+  content: '';
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  display: block; }
+
+.image-background--steel::after {
+  background-image: url("../img/steel.jpg");
+  transform: translate(48px, 48px); }
+
+.image-background--steel:hover.image-wrapper img {
+  transform: translate(24px, 24px); }
+
+.image-background--steel:hover.image-wrapper::after {
+  transform: translate(-12px, -12px); }
+
+.image-background--copper {
+  display: flex;
+  justify-content: start; }
+  .image-background--copper::after {
+    background-image: url("../img/copper.jpg");
+    transform: translate(-48px, -48px); }
+  .image-background--copper:hover.image-wrapper img {
+    transform: translate(-24px, -24px); }
+  .image-background--copper:hover.image-wrapper::after {
+    transform: translate(12px, 12px); }

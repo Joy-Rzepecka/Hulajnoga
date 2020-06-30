@@ -1,3 +1,5 @@
+@import '../vars.scss';
+
 // Te zmienne sa uzywane tylko w tym pliku:
 $image-width: 30vw;
 $image-height: $image-width * 4 /3;
@@ -9,12 +11,16 @@ $image-translation: 24px;
 .image-wrapper img,
 .image-wrapper::after{
     height: $image-height;
-    transition: transform $transition-duration;
+    max-height: 768px; //40vw gdy widt: 1920px
     width: $image-width;
+    max-width: 576px; //30vw gdy width: 1920px 
+    transition: transform $transition-duration;
 }
 
 .image-wrapper {
     height: $image-height;
+    display: flex;
+    justify-content: end;
 
 }
 
@@ -31,7 +37,6 @@ $image-translation: 24px;
     background-size: cover;
     position: absolute;
     top: 0;
-    left: 0;
     display: block;
 }
 
@@ -57,11 +62,10 @@ $image-translation: 24px;
 .image-background--copper {
     // przesunięcie zdjecia na lewą stronę od diva 
     display: flex;
-    justify-content: end;
+    justify-content: start;
+    
     &::after {
-        //trzeba zamienić left na right
-        left: unset;
-        right: 0;
+    
         background-image: url('../img/copper.jpg');
         transform: translate(-2 * $image-translation, -2 * $image-translation);
     }

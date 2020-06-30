@@ -1,0 +1,29 @@
+@import '../vars.scss';
+
+.form-modal-button{
+    border: 1px solid yellow;
+    border-radius: 4px;
+    padding: .5rem;
+    opacity: 1;
+    background-color: $nav-dark;
+}
+
+.form-wrapper{
+    transform: translate(-50%, -50%) scale(0);
+    display: inline-block;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 110;
+    background-color: $nav-dark;
+    padding: 32px;
+}
+
+#form-modal:checked{
+  ~.form-wrapper{
+    transform: translate(-50%, -50%) scale(1);
+  } 
+  ~label .form-modal-button{
+    opacity: 0.5;
+  }
+}

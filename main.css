@@ -26,7 +26,7 @@ h2::before {
     background-repeat: no-repeat;
     background-size: cover;
     position: absolute;
-    top: 0;
+    top: -16px;
     left: 0;
     display: block;
     height: 120px;
@@ -51,17 +51,13 @@ h2:hover::before {
 
 p {
     font-size: 24px;
-    width: 465px;
-    /* jak to wymierzyłem, nie wiem */
+    width: 80%;
 }
 
 
 
 /*W tym miejscu zaczynają się style dla pojedynczych elementów i sekcji na stronie */
 main {
-    margin-bottom: 500px;
-    /*tymczasowo */
-    height: 100vh;
     position: relative;
     z-index: 90;
 }
@@ -89,7 +85,7 @@ main nav .brand-name {
     align-items: center;
     height: inherit;
     background-image: url('img/copper.jpg');
-    margin-left: 12.5rem;
+    margin-left: 8.5rem;
     margin-right: 3rem;
     padding: 0 1rem;
     font-family: 'Lato', sans-serif;
@@ -127,17 +123,15 @@ main nav .nav-tabs .nav-tab-item {
 }
 
 .main-image {
-    height: 100vh;
-    position: absolute;
-    top: 0;
-    left: 50%;
-    z-index: 95;
-    transform: translateX(-50%);
+    width: 84vw;
+    display: flex;
+    margin: 0 auto;
+    
 }
 
 #service ol {
     list-style: decimal;
-    width: 465px;
+    /* width: 465px; */
     font-size: 24px;
 }
 
@@ -153,4 +147,25 @@ main nav .nav-tabs .nav-tab-item {
 #contact footer {
     position: absolute;
     bottom: 0;
+}
+
+#contact footer p{
+    display: inline-block;
+}
+
+
+
+
+@media (max-width: 767px) {
+
+    .welcome-text{
+        margin-left: 1rem;
+        font-size: 2rem;
+    }
+
+    main nav .brand-name{
+        margin-left: 1rem;
+        white-space: nowrap;
+    }
+
 }
