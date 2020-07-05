@@ -109,10 +109,13 @@
                     <label for="form-modal">
                         <span class="form-modal-button">Przejdź do formularza</span>
                     </label>
-                    <div class="form-wrapper">
-                        <i class="form-exit"></i>
+                    
+                    <dialog class="form-wrapper">
+                        <label for="form-modal">
+                            <i class="form-modal-exit">X</i>
+                        </label>
                         <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd5eYh3jx6Hr51gKt6Cd5aEjeA9NSs207LvIR-90kgnQDm-vQ/viewform?embedded=true" width="640" height="677" frameborder="0" marginheight="0" marginwidth="0">Ładuję…</iframe>
-                    </div>
+                    </dialog>
 
                 </div>
             </div>
@@ -122,6 +125,14 @@
             <span class="contact-made-by">Made by <a href="">EduYourself</a></span>
         </footer>
     </section>
+
+
+    <script src="js/vanillajs-scrollspy.min.js"></script>
+    <script>
+      const navbar = document.querySelector('nav');
+      const scrollspy = new VanillaScrollspy(navbar);
+      scrollspy.init();
+    </script>
 </body>
 
 </html>

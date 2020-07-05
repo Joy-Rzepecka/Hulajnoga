@@ -1,3 +1,6 @@
+#form-modal {
+  display: none; }
+
 .form-modal-button {
   border: 1px solid yellow;
   border-radius: 4px;
@@ -5,18 +8,28 @@
   opacity: 1;
   background-color: #4F4F4F; }
 
+.form-modal-exit {
+  position: fixed;
+  top: 10px;
+  right: 20px;
+  color: #ffffff7f;
+  font-size: 32px;
+  font-weight: 900; }
+
 .form-wrapper {
-  transform: translate(-50%, -50%) scale(0);
+  transform: scale(0) translate(-50%, -50%);
   display: inline-block;
   position: fixed;
   top: 50%;
   left: 50%;
   z-index: 110;
   background-color: #4F4F4F;
-  padding: 32px; }
+  padding: 32px;
+  transition: 0.3s; }
 
 #form-modal:checked ~ .form-wrapper {
-  transform: translate(-50%, -50%) scale(1); }
+  transform: scale(1) translate(-50%, -45%);
+  box-shadow: 0 0 0 50vmax rgba(0, 0, 0, 0.8); }
 
 #form-modal:checked ~ label .form-modal-button {
   opacity: 0.5; }
