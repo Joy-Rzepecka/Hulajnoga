@@ -62,52 +62,6 @@ main {
     z-index: 90;
 }
 
-main nav {
-    /* background: */
-    display: flex;
-    align-items: center;
-    position: fixed;
-    width: 100%;
-    height: 5rem;
-    text-transform: uppercase;
-    font-size: 24px;
-    z-index: 100;
-
-}
-
-main nav .brand-name-wrapper {
-    height: 100%;
-}
-
-main nav .brand-name {
-    /* text-shadow:  */
-    display: flex;
-    align-items: center;
-    height: inherit;
-    background-image: url('img/copper.jpg');
-    margin-left: 8.5rem;
-    margin-right: 3rem;
-    padding: 0 1rem;
-    font-family: 'Lato', sans-serif;
-    font-size: 36px;
-    font-weight: 700;
-    text-transform: none;
-    color: white;
-}
-
-main nav .nav-tabs {
-
-    display: flex;
-    flex-direction: row;
-    margin: 0;
-    padding: 0;
-}
-
-main nav .nav-tabs .nav-tab-item {
-    margin: 0 .5rem;
-}
-
-
 .welcome-text {
 
     /* color

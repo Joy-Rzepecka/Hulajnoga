@@ -1,10 +1,106 @@
 @import '../vars.scss';
 
-main nav{
+main nav {
     color: $light;
     background-color: $nav-dark;
 }
 
-.nav-tab-item{
+.nav-tab-item {
     color: $light;
+}
+
+nav {
+    /* background: */
+    display: flex;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    height: 5rem;
+    text-transform: uppercase;
+    font-size: 24px;
+    z-index: 100;
+
+}
+
+nav .brand-name-wrapper {
+    height: 100%;
+}
+
+nav .brand-name {
+    /* text-shadow:  */
+    display: flex;
+    align-items: center;
+    height: inherit;
+    background-image: url('../img/copper.jpg');
+    margin-left: 8.5rem;
+    margin-right: 3rem;
+    padding: 0 1rem;
+    font-family: 'Lato', sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: none;
+    color: white;
+}
+
+nav .nav-tabs {
+
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+}
+
+nav .nav-tabs .nav-tab-item {
+    margin: 0 .5rem;
+}
+
+#collapse {
+    display: none;
+}
+
+label[for="collapse"] {
+    display: none;
+    position: absolute;
+    right: 2rem;
+
+}
+
+.hamburger-menu {
+    margin-left: auto;
+    border: 2px solid lighten($color: $nav-dark, $amount: 10);
+    padding: .5rem;
+}
+
+
+#collapse:checked {
+    ~.nav-tabs {
+        transform: translateY(140px) scaleY(1);
+        flex-direction: column;
+        width: 100vw;
+        background-color: $nav-dark;
+        position: absolute;
+        left: 0;
+        // top: 80px;
+
+        .nav-tab-item{
+         padding: 16px 8px;   
+        }
+    }
+
+    ~label .hamburger-menu {
+        opacity: 0.5;
+    }
+}
+
+@media(max-width: 768px) {
+
+    .nav-tabs {
+        transform: scaleY(0);
+    }
+
+    label[for="collapse"] {
+        display: inline;
+
+    }
+
 }

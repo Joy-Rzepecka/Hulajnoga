@@ -25,21 +25,21 @@
 
 .image-background--steel::after {
   background-image: url("../img/steel.jpg");
-  transform: translate(48px, 48px); }
+  transform: translate(44px, 44px); }
 
 .image-background--steel:hover.image-wrapper img {
-  transform: translate(24px, 24px); }
+  transform: translate(22px, 22px); }
 
 .image-background--steel:hover.image-wrapper::after {
-  transform: translate(-12px, -12px); }
+  transform: translate(-11px, -11px); }
 
 .image-background--copper {
   display: flex;
   justify-content: start; }
   .image-background--copper::after {
     background-image: url("../img/copper.jpg");
-    transform: translate(-48px, -48px); }
+    transform: translate(-44px, -44px); }
   .image-background--copper:hover.image-wrapper img {
-    transform: translate(-24px, -24px); }
+    transform: translate(-22px, -22px); }
   .image-background--copper:hover.image-wrapper::after {
-    transform: translate(12px, 12px); }
+    transform: translate(11px, 11px); }

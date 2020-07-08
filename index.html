@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="main.css"> <!-- Main to plik ze stylami napisanymi w cssie-->
     <link rel="stylesheet" href="css-components/scroll-arrow.css">
     <style>
-        @media(max-width: 786px) {
+        @media(max-width: 48rem) {
             /* ta klasa informuje, że element jest widoczny wyłącznie na ekranach o szerokości conajmniej 768px */
 
             .visible-md {
@@ -28,6 +28,10 @@
             <a href="#" class="brand-name-wrapper">
                 <div class="brand-name">Piotr Rzepecki</div>
             </a>
+            <input type="checkbox" id="collapse">
+            <label for="collapse">
+                <i class="hamburger-menu">menu</i>
+             </label> 
             <ul class="nav-tabs">
                 <a href="#about-me">
                     <li class="nav-tab-item">o mnie</li>
@@ -39,12 +43,13 @@
                     <li class="nav-tab-item">kontakt</li>
                 </a>
             </ul>
+           
         </nav>
         <!-- obecnie wykorzystywane zdjecie jest zdecydowanie nieidealne -->
         <img src="img/tlo.png" alt="" class="main-image">
         <h1 class="welcome-text">Serwis i naprawa <br> hulajnóg elekrycznych</h1>
         <!-- strazałka jako link w srodku element pozycjonujący z ::beforem tworzacym strzlke -->
-        <a href="#"><i class="scroll-arrow"></i></a>
+        <a href="#about-me"><i class="scroll-arrow"></i></a>
     </main>
     <section id="about-me">
         <div class="container">
