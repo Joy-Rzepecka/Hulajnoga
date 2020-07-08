@@ -4,10 +4,9 @@
     flex-direction: column;
     //wyśrodkowanie pionowe rzędu w każdym kontenerze
     justify-content: center;
-    box-sizing: content-box;
+    box-sizing: border-box;
     margin-left: auto;
     margin-right: auto;
-    padding: 0 10vw;
     width: 100%;
     height: 100%;
 }
