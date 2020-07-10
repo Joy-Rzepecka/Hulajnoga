@@ -9,7 +9,7 @@
 .image-wrapper {
   height: 40vw;
   display: flex;
-  justify-content: end; }
+  justify-content: center; }
 
 .image-wrapper img {
   z-index: 80;
@@ -33,13 +33,12 @@
 .image-background--steel:hover.image-wrapper::after {
   transform: translate(-11px, -11px); }
 
-.image-background--copper {
-  display: flex;
-  justify-content: start; }
-  .image-background--copper::after {
-    background-image: url("../img/copper.jpg");
-    transform: translate(-44px, -44px); }
-  .image-background--copper:hover.image-wrapper img {
-    transform: translate(-22px, -22px); }
-  .image-background--copper:hover.image-wrapper::after {
-    transform: translate(11px, 11px); }
+.image-background--copper::after {
+  background-image: url("../img/copper.jpg");
+  transform: translate(-44px, -44px); }
+
+.image-background--copper:hover.image-wrapper img {
+  transform: translate(-22px, -22px); }
+
+.image-background--copper:hover.image-wrapper::after {
+  transform: translate(11px, 11px); }
