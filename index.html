@@ -9,7 +9,12 @@
     <link rel="stylesheet" href="css/style.css">
     <!-- styles to plik, który jest pisany w scssie -->
     <link rel="stylesheet" href="main.css"> <!-- Main to plik ze stylami napisanymi w cssie-->
-    <link rel="stylesheet" href="css-components/scroll-arrow.css">
+  
+ 
+    <title>Serwis hulajnóg elektrycznych</title>
+</head>
+
+<body>
     <style>
         @media(max-width: 48rem) {
             /* ta klasa informuje, że element jest widoczny wyłącznie na ekranach o szerokości conajmniej 768px */
@@ -18,11 +23,16 @@
                 display: none;
             }
         }
-    </style>
-    <title>Serwis hulajnóg elektrycznych</title>
-</head>
 
-<body>
+        @media(min-width: 769px){
+           
+            .visible-sm{
+                transform: scaleY(0);
+                display: none;
+            }
+
+        }
+    </style>
     <main id="home">
         <nav>
             <a href="#home" class="brand-name-wrapper">
@@ -32,7 +42,18 @@
             <label for="collapse">
                 <i class="hamburger-menu">menu</i>
              </label> 
-            <ul class="nav-tabs">
+             <ul class="nav-tabs">
+                <a href="#about-me">
+                    <li class="nav-tab-item">o mnie</li>
+                </a>
+                <a href="#service">
+                    <li class="nav-tab-item">oferta</li>
+                </a>
+                <a href="#contact">
+                    <li class="nav-tab-item">kontakt</li>
+                </a>
+            </ul>
+            <ul class="nav-tabs nav-tabs-mobile visible-sm">
                 <a href="#about-me">
                     <li class="nav-tab-item">o mnie</li>
                 </a>

@@ -67,21 +67,22 @@ label[for="collapse"] {
 
 .hamburger-menu {
     margin-left: auto;
-    border: 2px solid lighten($color: $nav-dark, $amount: 10);
+    border: 2px solid lighten($nav-dark, 10);
     padding: .5rem;
 }
 
-
+.nav-tabs.nav-tabs-mobile {
+    transform:scaleY(0);
+    flex-direction: column;
+    width: 100vw;
+    background-color: $nav-dark;
+    position: absolute;
+    left: 0;
+}
 #collapse:checked {
-    ~.nav-tabs {
+    ~.nav-tabs-mobile{
         transform: translateY(140px) scaleY(1);
-        flex-direction: column;
-        width: 100vw;
-        background-color: $nav-dark;
-        position: absolute;
-        left: 0;
-        // top: 80px;
-
+   
         .nav-tab-item{
          padding: 16px 8px;   
         }
