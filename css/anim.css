@@ -1,0 +1,15 @@
+.anim-forth {
+    transition: 3s ease;
+    transform: translate(125%, 0);
+}
+
+
+.anim-back {
+    transition: 3s ease;
+    transform: translate(-125%, 0);
+}
+
+.anim-mid {
+    transition: 3s ease;
+    transform: translate(0, 0);
+}
