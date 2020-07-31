@@ -10,6 +10,6 @@
 }
 
 .anim-mid {
-    transition: 3s ease;
+    transition: 2s ease;
     transform: translate(0, 0);
 }

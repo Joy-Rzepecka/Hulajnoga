@@ -85,6 +85,17 @@ main {
     
 }
 
+.wind-container{
+    display: flex;
+    justify-content: space-between;
+    height: 10vh;
+    width: 100%;
+}
+
+.wind-container img{
+    width: 25%;
+}
+
 #service ol {
     list-style: decimal;
     /* width: 465px; */
@@ -108,6 +119,7 @@ main {
 #contact footer p{
     display: inline-block;
 }
+
 
 
 
