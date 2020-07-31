@@ -4,6 +4,7 @@ body {
  czyszczenie marginesow w reset.scss
 background: w style.css */
     font-family: 'Jost', sans-serif;
+    overflow-x: hidden;
 }
 
 /*Najpierw opisuje powtarzające się wielokrotnie elementy na stronie, które mają wspólne style */

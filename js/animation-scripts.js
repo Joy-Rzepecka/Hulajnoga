@@ -33,8 +33,7 @@ window.onscroll = () => {
      if (!ticking) {
 	 window.requestAnimationFrame(() => {
 	    sImg.classList.toggle("anim-forth", prevPos < scrollPos);
-	    sImg.classList.toggle("anim-back", prevPos > scrollPos);
-	    sImg.classList.toggle("anim-mid", scrollPos == 0);
+	     sImg.classList.toggle("anim-mid", (prevPos > scrollPos) || (scrollPos === 0));
 	    ticking = false;
 	}, );
 	
