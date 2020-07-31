@@ -61,6 +61,7 @@ p {
 main {
     position: relative;
     z-index: 90;
+    height: auto;
 }
 
 .welcome-text {
@@ -134,6 +135,14 @@ main {
     main nav .brand-name{
         margin-left: 1rem;
         white-space: nowrap;
+    }
+
+}
+
+@media (max-width: 479px){
+
+    label[for="collapse"]{
+        display: none;
     }
 
 }

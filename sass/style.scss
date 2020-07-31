@@ -22,7 +22,7 @@ body{
     color: $light;
 }
 //dodaje wysokosc do sekcji w zaleznosci od nav-height
-section, main{
+section{
     height: calc(100vh + #{$nav-height});
 }
 
